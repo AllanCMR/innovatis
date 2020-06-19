@@ -4,11 +4,9 @@ from tkinter import *
 from tkinter import messagebox
 import random
 
-# load questions and answer choices from json file instead of the file
 with open('./data.json', encoding="utf8") as f:
     data = json.load(f)
 
-# convert the dictionary in lists of questions and answers_choice
 pergunta = [v for v in data[0].values()]
 resposta = [v for v in data[1].values()]
 
